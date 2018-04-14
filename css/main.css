@@ -1,0 +1,200 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #3F4A55;
+  color: #fff;
+  padding: 5px 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+
+form {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #3F4A55 inset;
+}
+
+input,
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  width: 5%;
+  display: inline-block;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+  color: #E00087;
+}
+
+input[type="radio"]  + label {
+  width: 90%;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type="checkbox"] + label {
+  width: 90%;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #fff;
+  border: 2px solid #E00087;
+}
+
+fieldset {
+  padding: 0;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #E00087;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #AE0055;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 #FF28AF inset;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+::placeholder {
+  color: #8A8A8A;
+  text-align: right;
+  font-style: italic;
+  padding-right: 4px;
+  font-size: 0.8em;
+}
+
+/* Classes */
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+.container p{
+  color: #8A8A8A;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.zip {
+  max-width: 40%;
+}
+
+.copyright {
+  text-align: center;
+  color: #8A8A8A;
+  font-style: italic;
+}
+
+.copyrightlogo {
+  font-style: normal;
+}
+
+.license {
+  font-size: 10px;
+  text-align: center;
+}
+
+.checkbox,
+.radio {
+  padding: 10px 0;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 760px) {
+
+  form {
+    min-width: 500px;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fields{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    min-width: 500px;
+    max-width: 60%;
+  }
+
+}
