@@ -181,29 +181,36 @@ label {
 
   form {
     min-width: 500px;
-    max-width: 60%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
   }
 
   .container {
     min-width: 500px;
-    max-width: 60%;
+    max-width: 700px;
   }
 
-  .fields{
+  .fields {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 1 50%;
+    flex: 1;
   }
 
-  .labels {
-
+  .labels{
+    padding: 15px 10px 0 0;
+    min-width: 150px;
   }
 
-  .inputs {
+  .zip {
+    width: 250px;
+  }
 
+  .legend1 {
+    margin-bottom: 30px;
+  }
+
+  .legend2 {
+    margin-bottom: 20px;
   }
 
 }
